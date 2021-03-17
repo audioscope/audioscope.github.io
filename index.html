@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Into the Wild with AudioScope: Unsupervised Audio-Visual Separation of On-Screen Sounds
+</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+  <p>&nbsp;</p>
+  <p><span class="title">Into the Wild with AudioScope: Unsupervised Audio-Visual Separation of On-Screen Sounds</span></p>
+  <table border="0" align="center" class="authors">
+    <tr align="center">
+      <td><a href="https://efthymios.web.illinois.edu/">Efthymios Tzinis<sup>1,2</sup></a></td>
+      <td><a href="https://ai.google/research/people/ScottWisdom">Scott Wisdom<sup>1</sup></a></td>
+      <td><a href="https://research.google/people/104952/">Aren Jansen<sup>1</sup></a></td>
+      <td><a href="https://research.google/people/105584/">Shawn Hershey<sup>1</sup></a></td> <br> <br>
+      <td><a href="https://talremez.wixsite.com/home">Tal Remez<sup>1</sup></a></td>
+      <td><a href="https://research.google/people/DanEllis/">Daniel P.W. Ellis<sup>1</sup></a></td>
+      <td><a href="https://ai.google/research/people/106072">John R. Hershey<sup>1</sup></a></td>
+    </tr>
+  </table>
+  <br />
+  <table border="0" align="center" class="affiliations">
+    <tr>
+      <!--
+      <td align="center"><img src="images/logo_research.png" height="40" alt=""/></td>
+      -->
+      <td align="left"><a href="https://research.google.com/"><sup>1</sup>Google Research</a></td>
+    </tr>
+  </table>
+  <table border="0" align="center" class="affiliations">
+  <tr>
+    <td align="center"><a href="https://ece.umd.edu/"><sup>2</sup>University of Illinois at Urbana-Champaign</a></td>
+    </tr>
+  </table>
+  <table border="0" align="center" class="affiliations">
+  </table>
+  <br>
+  <div align="center">
+  <img  src="./images/demo_image.png" alt="AudioScope Example" width="800">
+  <h6> (Resized still with or without overlaid attention map from <a href="https://multimedia-commons.s3-us-west-2.amazonaws.com/data/videos/mp4/354/017/354017436ca2b281f97f2d431a211.mp4">"Whitethroat" by S. Rae</a>, license: <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.) </h6>
+  </div>
+  <br />
+  <p><span class="section">Abstract</span></p>
+  <p>Recent progress in deep learning has enabled many advances in sound separationand visual scene understanding.  However, extracting sound sources which areapparent in natural videos remains an open problem.  In this work, we presentAudioScope, a novel audio-visual sound separation framework that can be trainedwithout supervision to isolate on-screen sound sources from real in-the-wild videos.Prior audio-visual separation work assumed artificial limitations on the domainof sound classes (e.g., to speech or music), constrained the number of sources,and required strong sound separation or visual segmentation labels. AudioScopeovercomes these limitations, operating on an open domain of sounds, with variablenumbers of sources, and without labels or prior visual segmentation. The trainingprocedure for AudioScope uses mixture invariant training (MixIT) to separatesynthetic mixtures of mixtures (MoMs) into individual sources, where noisy labelsfor mixtures are provided by an unsupervised audio-visual coincidence model.Using the noisy labels, along with attention between video and audio features,AudioScope learns to identify audio-visual similarity and to suppress off-screensounds. We demonstrate the effectiveness of our approach using a dataset of videoclips extracted from open-domain YFCC100m video data. This dataset contains awide diversity of sound classes recorded in unconstrained conditions, making theapplication of previous methods unsuitable. For evaluation and semi-supervisedexperiments, we collected human labels for presence of on-screen and off-screensounds on a small subset of clips.<br />
+  </p>
+  <p class="section">&nbsp;</p>
+
+  <p>&nbsp;</p>
+  <p class="section">Paper</p>
+  <table border="0">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td><p>&quot;Into the Wild with AudioScope: Unsupervised Audio-Visual Separation of On-Screen Sounds&quot;,<br />
+            Efthymios Tzinis, Scott Wisdom, Aren Jansen, Shawn Hershey, Tal Remez, Daniel P. W. Ellis, John R. Hershey,<br />
+            Proc. International Conference on Learning Representations (ICLR) 2021.<br />
+            [<a href="https://arxiv.org/pdf/2011.01143.pdf">arXiv preprint</a>]</p>
+        <!-- <p>[<a href="https://arxiv.org/pdf/2011.01143.pdf">PDF</a>]</p> -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <p class="section">Audio-Visual Demos</p>
+  <table width="600" height="40" border="0">
+      <td>[<a href="./supplemental/index.html">Demo index</a>]</td>
+  </table>
+  <p class="section">&nbsp;</p>
+  <p class="section">&nbsp;</p>
+  <p align="center" class="date">Last updated: March 2021</p>
+</div>
+</body>
+</html>
